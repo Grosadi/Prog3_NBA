@@ -1,4 +1,4 @@
-# OENIK_PROG3_2019_1_UKCWGN
+# OENIK_PROG3_2019_2_UKCWGN
 Féléves feladat:
 Az adatbázis az NBA(amerikai-kosárlabdaliga) csapatainak, játékosainak, edzőinek adatait foglalja össze.
 Csapatok: id, név, város, alapítás ideje, győzelem/vereség arány alapítás óta, győzelem vereség arány a szezonban bajnoki címek száma
