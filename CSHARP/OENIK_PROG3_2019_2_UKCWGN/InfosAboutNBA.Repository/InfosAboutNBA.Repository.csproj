@@ -44,6 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="oenik.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
