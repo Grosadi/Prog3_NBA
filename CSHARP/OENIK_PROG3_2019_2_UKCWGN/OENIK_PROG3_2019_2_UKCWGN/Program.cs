@@ -41,7 +41,7 @@ namespace OENIK_PROG3_2019_2_UKCWGN
             Console.WriteLine("18) Has this Coach ever been a champion?");
             Console.WriteLine("19) List of Teams and order by Value of Roster");
             Console.WriteLine("20) Get season standing from Web Application");
-            Console.WriteLine("ESC) Exit");
+            Console.WriteLine("21) Exit");
             Console.Write("\r\nSelect an option: ");
 
             switch (Console.ReadLine())
