@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="NBA_DataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Coaches">
+          <Key>
+            <PropertyRef Name="idCoaches" />
+          </Key>
+          <Property Name="idCoaches" Type="int" Nullable="false" />
+          <Property Name="CName" Type="varchar" MaxLength="100" />
+          <Property Name="WinPercentage" Type="float" />
+          <Property Name="NumberOfSeasons" Type="int" />
+          <Property Name="PreviusTeam" Type="varchar" MaxLength="100" />
+          <Property Name="NumberOfChampionships" Type="int" />
+          <Property Name="idTeams" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Players">
+          <Key>
+            <PropertyRef Name="idPlayers" />
+          </Key>
+          <Property Name="idPlayers" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="PName" Type="varchar" MaxLength="100" />
+          <Property Name="Age" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="NumberOfPlayedSeason" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="Position" Type="varchar" MaxLength="5" />
+          <Property Name="Height" Type="float" Nullable="false" />
+          <Property Name="PWeight" Type="float" />
+          <Property Name="NumberOfChampionships" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="LifetimePoints" Type="int" />
+          <Property Name="PointsInSeason" Type="int" />
+          <Property Name="PValue" Type="int" />
+          <Property Name="idTeams" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Teams">
+          <Key>
+            <PropertyRef Name="idTeams" />
+          </Key>
+          <Property Name="idTeams" Type="int" Nullable="false" />
+          <Property Name="TName" Type="varchar" MaxLength="100" />
+          <Property Name="HomeTown" Type="varchar" MaxLength="100" />
+          <Property Name="Found" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="WinPercentageSinceFounded" Type="float" Nullable="false" />
+          <Property Name="WinPercentageInSeason" Type="float" Nullable="false" />
+          <Property Name="NumberOfChampionships" Type="numeric" Precision="18" Scale="0" />
+        </EntityType>
+        <Association Name="Coaches_FOREIGN_KEY">
+          <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+          <End Role="Coaches" Type="Self.Coaches" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teams">
+              <PropertyRef Name="idTeams" />
+            </Principal>
+            <Dependent Role="Coaches">
+              <PropertyRef Name="idTeams" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Player_FOREIGN_KEY">
+          <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+          <End Role="Players" Type="Self.Players" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teams">
+              <PropertyRef Name="idTeams" />
+            </Principal>
+            <Dependent Role="Players">
+              <PropertyRef Name="idTeams" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NBA_DataModelStoreContainer">
+          <EntitySet Name="Coaches" EntityType="Self.Coaches" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Players" EntityType="Self.Players" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Teams" EntityType="Self.Teams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="Coaches_FOREIGN_KEY" Association="Self.Coaches_FOREIGN_KEY">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Coaches" EntitySet="Coaches" />
+          </AssociationSet>
+          <AssociationSet Name="Player_FOREIGN_KEY" Association="Self.Player_FOREIGN_KEY">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Players" EntitySet="Players" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NBA_DataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Coaches">
+          <Key>
+            <PropertyRef Name="idCoaches" />
+          </Key>
+          <Property Name="idCoaches" Type="Int32" Nullable="false" />
+          <Property Name="CName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="WinPercentage" Type="Double" />
+          <Property Name="NumberOfSeasons" Type="Int32" />
+          <Property Name="PreviusTeam" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="NumberOfChampionships" Type="Int32" />
+          <Property Name="idTeams" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Teams" Relationship="Self.Coaches_FOREIGN_KEY" FromRole="Coaches" ToRole="Teams" />
+        </EntityType>
+        <EntityType Name="Players">
+          <Key>
+            <PropertyRef Name="idPlayers" />
+          </Key>
+          <Property Name="idPlayers" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="PName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="NumberOfPlayedSeason" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Position" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Height" Type="Double" Nullable="false" />
+          <Property Name="PWeight" Type="Double" />
+          <Property Name="NumberOfChampionships" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="LifetimePoints" Type="Int32" />
+          <Property Name="PointsInSeason" Type="Int32" />
+          <Property Name="PValue" Type="Int32" />
+          <Property Name="idTeams" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Teams" Relationship="Self.Player_FOREIGN_KEY" FromRole="Players" ToRole="Teams" />
+        </EntityType>
+        <EntityType Name="Teams">
+          <Key>
+            <PropertyRef Name="idTeams" />
+          </Key>
+          <Property Name="idTeams" Type="Int32" Nullable="false" />
+          <Property Name="TName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HomeTown" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Found" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="WinPercentageSinceFounded" Type="Double" Nullable="false" />
+          <Property Name="WinPercentageInSeason" Type="Double" Nullable="false" />
+          <Property Name="NumberOfChampionships" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="Coaches" Relationship="Self.Coaches_FOREIGN_KEY" FromRole="Teams" ToRole="Coaches" />
+          <NavigationProperty Name="Players" Relationship="Self.Player_FOREIGN_KEY" FromRole="Teams" ToRole="Players" />
+        </EntityType>
+        <Association Name="Coaches_FOREIGN_KEY">
+          <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+          <End Role="Coaches" Type="Self.Coaches" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teams">
+              <PropertyRef Name="idTeams" />
+            </Principal>
+            <Dependent Role="Coaches">
+              <PropertyRef Name="idTeams" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Player_FOREIGN_KEY">
+          <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+          <End Role="Players" Type="Self.Players" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teams">
+              <PropertyRef Name="idTeams" />
+            </Principal>
+            <Dependent Role="Players">
+              <PropertyRef Name="idTeams" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NBA_DataEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Coaches" EntityType="Self.Coaches" />
+          <EntitySet Name="Players" EntityType="Self.Players" />
+          <EntitySet Name="Teams" EntityType="Self.Teams" />
+          <AssociationSet Name="Coaches_FOREIGN_KEY" Association="Self.Coaches_FOREIGN_KEY">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Coaches" EntitySet="Coaches" />
+          </AssociationSet>
+          <AssociationSet Name="Player_FOREIGN_KEY" Association="Self.Player_FOREIGN_KEY">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Players" EntitySet="Players" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NBA_DataModelStoreContainer" CdmEntityContainer="NBA_DataEntities">
+          <EntitySetMapping Name="Coaches">
+            <EntityTypeMapping TypeName="NBA_DataModel.Coaches">
+              <MappingFragment StoreEntitySet="Coaches">
+                <ScalarProperty Name="idCoaches" ColumnName="idCoaches" />
+                <ScalarProperty Name="CName" ColumnName="CName" />
+                <ScalarProperty Name="WinPercentage" ColumnName="WinPercentage" />
+                <ScalarProperty Name="NumberOfSeasons" ColumnName="NumberOfSeasons" />
+                <ScalarProperty Name="PreviusTeam" ColumnName="PreviusTeam" />
+                <ScalarProperty Name="NumberOfChampionships" ColumnName="NumberOfChampionships" />
+                <ScalarProperty Name="idTeams" ColumnName="idTeams" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Players">
+            <EntityTypeMapping TypeName="NBA_DataModel.Players">
+              <MappingFragment StoreEntitySet="Players">
+                <ScalarProperty Name="idPlayers" ColumnName="idPlayers" />
+                <ScalarProperty Name="PName" ColumnName="PName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="NumberOfPlayedSeason" ColumnName="NumberOfPlayedSeason" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="PWeight" ColumnName="PWeight" />
+                <ScalarProperty Name="NumberOfChampionships" ColumnName="NumberOfChampionships" />
+                <ScalarProperty Name="LifetimePoints" ColumnName="LifetimePoints" />
+                <ScalarProperty Name="PointsInSeason" ColumnName="PointsInSeason" />
+                <ScalarProperty Name="PValue" ColumnName="PValue" />
+                <ScalarProperty Name="idTeams" ColumnName="idTeams" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Teams">
+            <EntityTypeMapping TypeName="NBA_DataModel.Teams">
+              <MappingFragment StoreEntitySet="Teams">
+                <ScalarProperty Name="idTeams" ColumnName="idTeams" />
+                <ScalarProperty Name="TName" ColumnName="TName" />
+                <ScalarProperty Name="HomeTown" ColumnName="HomeTown" />
+                <ScalarProperty Name="Found" ColumnName="Found" />
+                <ScalarProperty Name="WinPercentageSinceFounded" ColumnName="WinPercentageSinceFounded" />
+                <ScalarProperty Name="WinPercentageInSeason" ColumnName="WinPercentageInSeason" />
+                <ScalarProperty Name="NumberOfChampionships" ColumnName="NumberOfChampionships" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
