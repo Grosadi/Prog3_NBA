@@ -7,7 +7,8 @@ using InfosAboutNBA.Data;
 
 namespace InfosAboutNBA.Repository
 {
-    public interface IRepository <T> where T : class
+    public interface IRepository<T>
+        where T : class
     {
         T GetOne(int id);
 

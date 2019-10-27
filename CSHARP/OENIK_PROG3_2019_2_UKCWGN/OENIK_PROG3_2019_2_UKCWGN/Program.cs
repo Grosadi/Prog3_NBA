@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InfosAboutNBA.Data;
+using InfosAboutNBA.Logic;
 
 namespace OENIK_PROG3_2019_2_UKCWGN
 {
@@ -19,6 +21,11 @@ namespace OENIK_PROG3_2019_2_UKCWGN
 
         private static bool MainMenu()
         {
+            NBA_DataEntities entities = new NBA_DataEntities();
+            TeamLogic team = new TeamLogic();
+            PlayerLogic player = new PlayerLogic();
+            CoachLogic coach = new CoachLogic();
+
             Console.Clear();
             Console.WriteLine("Choose an option:");
             Console.WriteLine("1) Teams");
