@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['oenik_5fprog3_5f2019_5f2_5fukcwgn_3',['OENIK_PROG3_2019_2_UKCWGN',['../namespace_o_e_n_i_k___p_r_o_g3__2019__2___u_k_c_w_g_n.html',1,'']]]
+  ['data_64',['Data',['../namespace_infos_about_n_b_a_1_1_data.html',1,'InfosAboutNBA']]],
+  ['infosaboutnba_65',['InfosAboutNBA',['../namespace_infos_about_n_b_a.html',1,'']]],
+  ['logic_66',['Logic',['../namespace_infos_about_n_b_a_1_1_logic.html',1,'InfosAboutNBA']]],
+  ['repository_67',['Repository',['../namespace_infos_about_n_b_a_1_1_repository.html',1,'InfosAboutNBA']]]
 ];
