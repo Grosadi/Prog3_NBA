@@ -163,6 +163,69 @@ INSERT INTO Players VALUES(87, 'Bogdan Bogdanovic', 27, 2, 'SG', 198, 99, 0, 193
 INSERT INTO Players VALUES(88, 'Jeff Teague', 31, 10, 'PG', 193, 88, 0, 9088, NULL, NULL, 30);
 INSERT INTO Players VALUES(89, 'Karl-Anthony Towns', 24, 4, 'C', 213, 112, 0, 7283, NULL, NULL, 30);
 INSERT INTO Players VALUES(90, 'Andrew Wiggins', 25, 5, 'SF', 203, 87, 0, 7830, NULL, NULL, 30);
+------------------------------------------------------------------------------------------------------
+INSERT INTO Players VALUES(91, 'Rajon Rondo', 34, 13, 'PG', 185, 84, 1, 8567, NULL, NULL, 1);
+INSERT INTO Players VALUES(92, 'Kyle Kuzma', 24, 2, 'PF', 206, 99, 0, 2550, NULL, NULL, 1);
+INSERT INTO Players VALUES(93, 'Austin Rivers', 27, 7, 'PG/SG', 193, 90, 0, 4472, NULL, NULL, 2);
+INSERT INTO Players VALUES(94, 'P.J. Tucker', 34, 8, 'SF/PF', 198, 111, 0, 4354, NULL, NULL, 2);
+INSERT INTO Players VALUES(95, 'Enes Kanter', 27, 8, 'C', 208, 118, 0, 6958, NULL, NULL, 3);
+INSERT INTO Players VALUES(96, 'Jaylen Brown', 23, 3, 'SG', 198, 101, 0, 2548, NULL, NULL, 3);
+INSERT INTO Players VALUES(97, 'Tobias Harris', 27, 8, 'PF/SF', 206, 106, 0, 8492, NULL, NULL, 4);
+INSERT INTO Players VALUES(98, 'Josh Richardson', 26, 4, 'SG', 198, 90, 0, 3175, NULL, NULL, 4);
+INSERT INTO Players VALUES(99, 'Patrick Beverley', 31, 7, 'PG/SG', 185, 83, 0, 3461, NULL, NULL, 5);
+INSERT INTO Players VALUES(100, 'Montrezl Harrel', 26, 4, 'C/PF', 203, 108, 0, 2946, NULL, NULL, 5);
+INSERT INTO Players VALUES(101, 'Pascal Siakam', 26, 3, 'PF', 206, 104, 1, 2282, NULL, NULL, 6);
+INSERT INTO Players VALUES(102, 'Fred VanVleet', 26, 3, 'PG/SG', 183, 88, 1, 1536, NULL, NULL, 6);
+INSERT INTO Players VALUES(103, 'Taj Gibson', 34, 10, 'C/PF', 206, 102, 0, 7245, NULL, NULL, 7);
+INSERT INTO Players VALUES(104, 'Mitchell Robinson', 22, 1, 'C', 213, 101, 0, 518, NULL, NULL, 7);
+INSERT INTO Players VALUES(105, 'Patty Mills', 31, 10, 'PG', 183, 81, 1, 5120, NULL, NULL, 8);
+INSERT INTO Players VALUES(106, 'Marco Belinelli', 33, 12, 'SG', 196, 95, 1, 8021, NULL, NULL, 8);
+INSERT INTO Players VALUES(107, 'Draymond Green', 30, 7, 'PF', 201, 104, 3, 4862, NULL, NULL, 9);
+INSERT INTO Players VALUES(108, 'Willie Cauly-Stein', 26, 4, 'C', 213, 108, 0, 2971, NULL, NULL, 9);
+INSERT INTO Players VALUES(109, 'Coby White', 20, 0, 'PG', 193, 83, 0, NULL, NULL, NULL, 10);
+INSERT INTO Players VALUES(110, 'Tomas Satoransky', 28, 3, 'PG/SG', 201, 89, 0, 1408, NULL, NULL, 10);
+INSERT INTO Players VALUES(111, 'Jarett Alan', 21, 2, 'C', 211, 107, 0, 1484, NULL, NULL, 11);
+INSERT INTO Players VALUES(112, 'Joe Harris', 28, 5, 'SG', 198, 99, 0, 2494, NULL, NULL, 11);
+INSERT INTO Players VALUES(113, 'Tristan Thompson', 29, 8, 'C/PF', 208, 107, 1, 5213, NULL, NULL, 12);
+INSERT INTO Players VALUES(114, 'Matthew Dellavedova', 29, 6, 'PG', 193, 90, 1, 2260, NULL, NULL, 12);
+INSERT INTO Players VALUES(115, 'Reggie Jackson', 29, 8, 'PG', 190, 94, 0, 6845, NULL, NULL, 13);
+INSERT INTO Players VALUES(116, 'Thon Maker', 23, 3, 'C/PF', 216, 100, 0, 912, NULL, NULL, 13);
+INSERT INTO Players VALUES(117, 'Domantas Sabonis', 23, 3, 'C/PF', 211, 108, 0, 2445, NULL, NULL, 14);
+INSERT INTO Players VALUES(118, 'Jeremy Lamb', 27, 7, 'SF/SG', 196, 83, 0, 4465, NULL, NULL, 14);
+INSERT INTO Players VALUES(149, 'Brook Lopez', 32, 11, 'C', 213, 122, 0, 12453, NULL, NULL, 15);
+INSERT INTO Players VALUES(150, 'Kyle Korver', 39, 16, 'SF/SG', 201, 96, 0, 11595, NULL, NULL, 15);
+INSERT INTO Players VALUES(119, 'Jabari Parker', 25, 5, 'PF', 203, 111, 0, 3770, NULL, NULL, 16);
+INSERT INTO Players VALUES(120, 'Alex Len', 26, 6, 'C', 216, 113, 0, 3291, NULL, NULL, 16);
+INSERT INTO Players VALUES(121, 'Michael Kidd-Gilchrist', 26, 7, 'PF/SF', 201, 105, 0, 3695, NULL, NULL, 17);
+INSERT INTO Players VALUES(122, 'Willy Hernangomez', 25, 3, 'C', 211, 108, 0, 1260, NULL, NULL, 17);
+INSERT INTO Players VALUES(123, 'Dion Waiters', 28, 7, 'SG', 190, 97, 0, 5394, NULL, NULL, 18);
+INSERT INTO Players VALUES(124, 'Kendrick Nunn', 24, 0, 'SG', 188, 86, 0, NULL, NULL, NULL, 18);
+INSERT INTO Players VALUES(125, 'Evan Fournier', 27, 7, 'SG', 201, 92, 0, 6214, NULL, NULL, 19);
+INSERT INTO Players VALUES(126, 'D.J. Augistin', 32, 11, 'PG', 183, 83, 0, 7961, NULL, NULL, 19);
+INSERT INTO Players VALUES(127, 'Rui Hachimura', 22, 0, 'SF', 203, 104, 0, NULL, NULL, NULL, 20);
+INSERT INTO Players VALUES(128, 'Isaiah Thomas', 31, 8, 'PG/SG', 175, 83, 0, 9036, NULL, NULL, 20);
+INSERT INTO Players VALUES(129, 'Boban Marjanovic', 31, 4, 'C', 221, 131, 0, 1145, NULL, NULL, 21);
+INSERT INTO Players VALUES(130, 'Seth Curry', 29, 5, 'PG/SG', 188, 83, 0, 1820, NULL, NULL, 21);
+INSERT INTO Players VALUES(131, 'Andre Iguodala', 36, 15, 'SF/SG', 198, 97, 3, 13456, NULL, NULL, 22);
+INSERT INTO Players VALUES(132, 'Solomon Hill', 29, 6, 'SF', 201, 102, 0, 1826, NULL, NULL, 22);
+INSERT INTO Players VALUES(133, 'Lonzo Ball', 22, 2, 'PG', 198, 86, 0, 1046, NULL, NULL, 23);
+INSERT INTO Players VALUES(134, 'Brandon Ingram', 22, 3, 'PF/SF', 206, 86, 0, 2748, NULL, NULL, 23);
+INSERT INTO Players VALUES(135, 'Jerami Grant', 26, 5, 'PF/SF', 203, 97, 0, 3400, NULL, NULL, 24);
+INSERT INTO Players VALUES(136, 'Gary Hariss', 25, 5, 'SG', 193, 92, 0, 3932, NULL, NULL, 24);
+INSERT INTO Players VALUES(137, 'Dennis Schröder', 26, 6, 'PG', 185, 78, 0, 5825, NULL, NULL, 25);
+INSERT INTO Players VALUES(138, 'Shai Gilgeous-Alexander', 21, 1, 'PG/SG', 198, 82, 0, 984, NULL, NULL, 25);
+INSERT INTO Players VALUES(139, 'Hassan Whiteside', 31, 7, 'C', 208, 106, 0, 4635, NULL, NULL, 26);
+INSERT INTO Players VALUES(140, 'Jusuf Nurkic', 25, 5, 'C', 213, 127, 0, 3608, NULL, NULL, 26);
+INSERT INTO Players VALUES(141, 'Bojan Bogdanovic', 30, 5, 'SF', 203, 97, 0, 5366, NULL, NULL, 27);
+INSERT INTO Players VALUES(142, 'Jeff Green', 33, 11, 'PF/SF', 206, 106, 0, 11347, NULL, NULL, 27);
+INSERT INTO Players VALUES(143, 'DeAndre Ayton', 21, 1, 'C', 216, 113, 0, 1177, NULL, NULL, 28);
+INSERT INTO Players VALUES(144, 'Frank Kaminsky', 26, 4, 'C/PF', 213, 108, 0, 2814, NULL, NULL, 28);
+INSERT INTO Players VALUES(145, 'Harisson Barnes', 27, 7, 'PF/SF', 203, 102, 1, 7366, NULL, NULL, 29);
+INSERT INTO Players VALUES(146, 'Trevor Ariza', 34, 15, 'SF/SG', 203, 97, 1, 10808, NULL, NULL, 29);
+INSERT INTO Players VALUES(147, 'Noah Vonleh', 24, 5, 'C/PF', 206, 116, 0, 1545, NULL, NULL, 30);
+INSERT INTO Players VALUES(148, 'Jordan Bell', 25, 2, 'C/PF', 206, 97, 1, 489, NULL, NULL, 30);
+
+
 
 
 
@@ -192,7 +255,7 @@ INSERT INTO Coaches VALUES(22, 'Taylor Jenkins', 0.333, 1, NULL, 0, 22);
 INSERT INTO Coaches VALUES(23, 'Alvin Gentry', 0.463, 17, 'Suns', 0, 23);
 INSERT INTO Coaches VALUES(24, 'Mike Malone', 0.491, 7, 'Kings', 0, 24);
 INSERT INTO Coaches VALUES(25, 'Billy Donovan', 0.604, 5, NULL, 0, 25);
-INSERT INTO Coaches VALUES(26, 'Terry Stotts', 0,514, 12, 'Bucks', 0, 26);
+INSERT INTO Coaches VALUES(26, 'Terry Stotts', 0.514, 12, 'Bucks', 0, 26);
 INSERT INTO Coaches VALUES(27, 'Quin Snyder', 0.554, 6, NULL, 0, 27);
 INSERT INTO Coaches VALUES(28, 'Monty Williams', 0.441, 6, 'Pelicans', 0, 28);
 INSERT INTO Coaches VALUES(29, 'Luke Walton', 0.394, 4, 'Lakers', 0, 29);

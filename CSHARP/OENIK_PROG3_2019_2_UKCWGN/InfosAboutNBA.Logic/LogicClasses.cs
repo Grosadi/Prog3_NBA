@@ -142,7 +142,7 @@ namespace InfosAboutNBA.Logic
         /// </summary>
         public TeamLogic()
         {
-            this.teamRepo = new TeamRepository(new NBA_DataEntities());
+            this.teamRepo = new TeamRepository(new NBA_DatabaseEntities());
         }
 
         /// <summary>
@@ -250,7 +250,7 @@ namespace InfosAboutNBA.Logic
         /// </summary>
         public PlayerLogic()
         {
-            this.playerRepo = new PlayerRepository(new NBA_DataEntities());
+            this.playerRepo = new PlayerRepository(new NBA_DatabaseEntities());
         }
 
         /// <summary>
@@ -416,7 +416,7 @@ namespace InfosAboutNBA.Logic
         /// </summary>
         public CoachLogic()
         {
-            this.coachRepo = new CoachRepository(new NBA_DataEntities());
+            this.coachRepo = new CoachRepository(new NBA_DatabaseEntities());
         }
 
         /// <summary>

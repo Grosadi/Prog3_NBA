@@ -21,7 +21,7 @@ namespace OENIK_PROG3_2019_2_UKCWGN
 
         private static bool MainMenu()
         {
-            NBA_DataEntities entities = new NBA_DataEntities();
+            NBA_DatabaseEntities entities = new NBA_DatabaseEntities();
             TeamLogic team = new TeamLogic();
             PlayerLogic player = new PlayerLogic();
             CoachLogic coach = new CoachLogic();

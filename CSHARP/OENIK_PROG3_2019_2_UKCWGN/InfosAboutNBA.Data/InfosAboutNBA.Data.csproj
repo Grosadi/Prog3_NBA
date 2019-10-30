@@ -13,6 +13,9 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,11 +28,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,39 +71,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Coaches.cs">
-      <DependentUpon>NBA_Model.tt</DependentUpon>
+      <DependentUpon>NBA_Data_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="NBA_Model.Context.cs">
+    <Compile Include="NBA_Data_Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NBA_Model.Context.tt</DependentUpon>
+      <DependentUpon>NBA_Data_Model.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="NBA_Model.cs">
+    <Compile Include="NBA_Data_Model.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NBA_Model.tt</DependentUpon>
+      <DependentUpon>NBA_Data_Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="NBA_Model.Designer.cs">
+    <Compile Include="NBA_Data_Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NBA_Model.edmx</DependentUpon>
+      <DependentUpon>NBA_Data_Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Players.cs">
-      <DependentUpon>NBA_Model.tt</DependentUpon>
+      <DependentUpon>NBA_Data_Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Teams.cs">
-      <DependentUpon>NBA_Model.tt</DependentUpon>
+      <DependentUpon>NBA_Data_Model.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="NBA_Model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NBA_Model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="App.Config" />
-    <None Include="NBA_Model.edmx.diagram">
-      <DependentUpon>NBA_Model.edmx</DependentUpon>
+    <EntityDeploy Include="NBA_Data_Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NBA_Data_Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="NBA_Data_Model.edmx.diagram">
+      <DependentUpon>NBA_Data_Model.edmx</DependentUpon>
     </None>
     <None Include="oenik.ruleset" />
     <None Include="packages.config" />
@@ -111,25 +111,6 @@
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.Unstable.1.2.0.66\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.Unstable.1.2.0.66\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="NBA_Data.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="NBA_Data_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>NBA_Data.mdf</DependentUpon>
-    </Content>
-    <Content Include="NBA_Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>NBA_Model.Context.cs</LastGenOutput>
-      <DependentUpon>NBA_Model.edmx</DependentUpon>
-    </Content>
-    <Content Include="NBA_Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NBA_Model.edmx</DependentUpon>
-      <LastGenOutput>NBA_Model.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -145,6 +126,25 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="NBA_Data_Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NBA_Data_Model.edmx</DependentUpon>
+      <LastGenOutput>NBA_Data_Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="NBA_Data_Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NBA_Data_Model.edmx</DependentUpon>
+      <LastGenOutput>NBA_Data_Model.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

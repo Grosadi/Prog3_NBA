@@ -72,13 +72,13 @@ namespace InfosAboutNBA.Repository
     /// </summary>
     public class TeamRepository : ITeamRepository
     {
-        private NBA_DataEntities entities;
+        private NBA_DatabaseEntities entities;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="TeamRepository"/> class TeamRepository.
         /// </summary>
         /// <param name="entities"> NBA_DataEntities, wich is automatically generated from databse.</param>
-        public TeamRepository(NBA_DataEntities entities)
+        public TeamRepository(NBA_DatabaseEntities entities)
         {
             this.entities = entities;
         }
@@ -212,13 +212,13 @@ namespace InfosAboutNBA.Repository
     /// </summary>
     public class PlayerRepository : IPlayerRepository
     {
-        private NBA_DataEntities entities;
+        private NBA_DatabaseEntities entities;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PlayerRepository"/> class.
         /// </summary>
         /// <param name="entities"> NBA_DataEntites, wich is automatically generated from database.</param>
-        public PlayerRepository(NBA_DataEntities entities)
+        public PlayerRepository(NBA_DatabaseEntities entities)
         {
             this.entities = entities;
         }
@@ -367,13 +367,13 @@ namespace InfosAboutNBA.Repository
     /// </summary>
     public class CoachRepository : ICoachRepository
     {
-        private NBA_DataEntities entities;
+        private NBA_DatabaseEntities entities;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CoachRepository"/> class.
         /// </summary>
         /// <param name="entities"> NBA_DataEntities, wich is automatically generated from database.</param>
-        public CoachRepository(NBA_DataEntities entities)
+        public CoachRepository(NBA_DatabaseEntities entities)
         {
             this.entities = entities;
         }
