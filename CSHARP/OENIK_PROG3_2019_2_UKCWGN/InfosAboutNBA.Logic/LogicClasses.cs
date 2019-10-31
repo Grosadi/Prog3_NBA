@@ -251,6 +251,33 @@ namespace InfosAboutNBA.Logic
         public PlayerLogic()
         {
             this.playerRepo = new PlayerRepository(new NBA_DatabaseEntities());
+
+            // Generate basic value to Players.PointsInSeason & Players.Value
+            foreach (var item in this.playerRepo.GetAll())
+            {
+                if (item.NumberOfPlayedSeason != 0)
+                {
+                    int numberofseasons = decimal.ToInt32(item.NumberOfPlayedSeason.Value);
+
+                    item.PointsInSeason = item.LifetimePoints / numberofseasons;
+                }
+                else
+                {
+                    int age = decimal.ToInt32(item.Age);
+                    int height = Convert.ToInt32(item.Height);
+                    item.PointsInSeason = (age * height) / 5;
+                }
+
+                item.PValue = (item.PointsInSeason * 100) + (decimal.ToInt32(item.NumberOfChampionships.Value) * 10000);
+            }
+
+            foreach (var item in this.playerRepo.GetAll())
+            {
+                if (item.NumberOfPlayedSeason == 0)
+                {
+                    item.LifetimePoints = item.PointsInSeason;
+                }
+            }
         }
 
         /// <summary>
