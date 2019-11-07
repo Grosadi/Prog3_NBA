@@ -26,18 +26,16 @@ namespace InfosAboutNBA.Logic
             {
                 if (item.NumberOfPlayedSeason != 0)
                 {
-                    int numberofseasons = decimal.ToInt32(item.NumberOfPlayedSeason.Value);
+                   // int numberofseasons = int.ToInt32(item.NumberOfPlayedSeason.Value);
 
-                    item.PointsInSeason = item.LifetimePoints / numberofseasons;
+                    item.PointsInSeason = item.LifetimePoints / item.NumberOfPlayedSeason;
                 }
                 else
                 {
-                    int age = decimal.ToInt32(item.Age);
-                    int height = Convert.ToInt32(item.Height);
-                    item.PointsInSeason = (age * height) / 5;
+                    item.PointsInSeason = (item.Age * item.Height) / 5;
                 }
 
-                item.PValue = (item.PointsInSeason * 100) + (decimal.ToInt32(item.NumberOfChampionships.Value) * 10000);
+                item.PValue = (item.PointsInSeason * 100) + (item.NumberOfChampionships.Value * 10000);
             }
 
             foreach (var item in this.playerRepo.GetAll())
@@ -91,7 +89,7 @@ namespace InfosAboutNBA.Logic
         /// <param name="player"> Player object.</param>
         public void Add(Players player)
         {
-            if (decimal.ToInt32(player.idPlayers) == this.playerRepo.GetOne(decimal.ToInt32(player.idPlayers)).idPlayers)
+            if (player.idPlayers == this.playerRepo.GetOne(player.idPlayers).idPlayers)
             {
                 player.idPlayers = this.playerRepo.GetAll().Count() + 1;
                 throw new Exception("This index is already used!\t New index: " + player.idPlayers);

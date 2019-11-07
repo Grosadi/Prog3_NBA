@@ -14,14 +14,14 @@ namespace InfosAboutNBA.Data
     
     public partial class Players
     {
-        public decimal idPlayers { get; set; }
+        public int idPlayers { get; set; }
         public string PName { get; set; }
-        public decimal Age { get; set; }
-        public Nullable<decimal> NumberOfPlayedSeason { get; set; }
+        public int Age { get; set; }
+        public Nullable<int> NumberOfPlayedSeason { get; set; }
         public string Position { get; set; }
-        public double Height { get; set; }
-        public Nullable<double> PWeight { get; set; }
-        public Nullable<decimal> NumberOfChampionships { get; set; }
+        public int Height { get; set; }
+        public Nullable<int> PWeight { get; set; }
+        public Nullable<int> NumberOfChampionships { get; set; }
         public Nullable<int> LifetimePoints { get; set; }
         public Nullable<int> PointsInSeason { get; set; }
         public Nullable<int> PValue { get; set; }

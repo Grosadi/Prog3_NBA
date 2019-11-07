@@ -441,8 +441,4 @@ namespace InfosAboutNBA.Repository
             this.entities.SaveChanges();
         }
     }
-
-    class RepoClasses
-    {
-    }
 }

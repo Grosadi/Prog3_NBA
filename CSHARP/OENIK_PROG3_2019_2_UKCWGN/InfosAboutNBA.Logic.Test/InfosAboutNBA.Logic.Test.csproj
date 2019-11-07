@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LogicTesting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -81,6 +82,20 @@
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.Unstable.1.2.0.66\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.Unstable.1.2.0.66\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InfosAboutNBA.Data\InfosAboutNBA.Data.csproj">
+      <Project>{4a41bb78-cbfb-414c-8f0f-544a5d88f582}</Project>
+      <Name>InfosAboutNBA.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InfosAboutNBA.Logic\InfosAboutNBA.Logic.csproj">
+      <Project>{2fb9d4f6-8cca-47f7-b5e9-d409e446a80b}</Project>
+      <Name>InfosAboutNBA.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InfosAboutNBA.Repository\InfosAboutNBA.Repository.csproj">
+      <Project>{556bf0d6-07cd-4bae-854b-3b239cb3403c}</Project>
+      <Name>InfosAboutNBA.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

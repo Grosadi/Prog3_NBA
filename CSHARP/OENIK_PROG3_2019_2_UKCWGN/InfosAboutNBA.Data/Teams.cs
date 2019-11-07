@@ -24,10 +24,10 @@ namespace InfosAboutNBA.Data
         public int idTeams { get; set; }
         public string TName { get; set; }
         public string HomeTown { get; set; }
-        public decimal Found { get; set; }
+        public int Found { get; set; }
         public double WinPercentageSinceFounded { get; set; }
         public double WinPercentageInSeason { get; set; }
-        public Nullable<decimal> NumberOfChampionships { get; set; }
+        public Nullable<int> NumberOfChampionships { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Coaches> Coaches { get; set; }
