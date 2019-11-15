@@ -26,8 +26,6 @@ namespace InfosAboutNBA.Logic
             {
                 if (item.NumberOfPlayedSeason != 0)
                 {
-                   // int numberofseasons = int.ToInt32(item.NumberOfPlayedSeason.Value);
-
                     item.PointsInSeason = item.LifetimePoints / item.NumberOfPlayedSeason;
                 }
                 else

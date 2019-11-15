@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InfosAboutNBA.Data;
 using InfosAboutNBA.Logic;
 
 namespace OENIK_PROG3_2019_2_UKCWGN
@@ -21,7 +20,6 @@ namespace OENIK_PROG3_2019_2_UKCWGN
 
         private static bool MainMenu()
         {
-            NBA_DatabaseEntities entities = new NBA_DatabaseEntities();
             TeamLogic team = new TeamLogic();
             PlayerLogic player = new PlayerLogic();
             CoachLogic coach = new CoachLogic();
@@ -52,23 +50,27 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                     switch (Console.ReadLine())
                     {
                         case "1":
-                            Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            foreach (var item in team.GetAll())
+                            {
+                                Console.WriteLine(item.idTeams + "\t" + item.TName);
+                            }
+
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "2":
-                            Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "3":
                             Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "4":
-                            Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            Console.WriteLine("ID of removable team:");
+                            team.Delete(int.Parse(Console.ReadLine()));
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                     }
@@ -83,23 +85,28 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                     switch (Console.ReadLine())
                     {
                         case "1":
-                            Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            foreach (var item in player.GetAll())
+                            {
+                                Console.WriteLine(item.idPlayers + "\t" + item.PName);
+                            }
+
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "2":
                             Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "3":
                             Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "4":
-                            Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            Console.WriteLine("ID of removable player:");
+                            player.Delete(int.Parse(Console.ReadLine()));
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                     }
@@ -114,23 +121,26 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                     switch (Console.ReadLine())
                     {
                         case "1":
-                            Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            foreach (var item in coach.GetAll())
+                            {
+                                Console.WriteLine(item.idCoaches + "\t" + item.CName);
+                            }
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "2":
                             Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "3":
                             Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                         case "4":
-                            Console.WriteLine("Ez a funkció még nem elérhető");
-                            Console.WriteLine("Press Enter to get back to the MENU");
+                            coach.Delete(int.Parse(Console.ReadLine()));
+                            Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
                     }
@@ -139,42 +149,42 @@ namespace OENIK_PROG3_2019_2_UKCWGN
 
                 case "4":
                     Console.WriteLine("Ez a funkció még nem elérhető");
-                    Console.WriteLine("Press Enter to get back to the MENU");
+                    Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
                 case "5":
                     Console.WriteLine("Ez a funkció még nem elérhető");
-                    Console.WriteLine("Press Enter to get back to the MENU");
+                    Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
                 case "6":
                     Console.WriteLine("Ez a funkció még nem elérhető");
-                    Console.WriteLine("Press Enter to get back to the MENU");
+                    Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
                 case "7":
                     Console.WriteLine("Ez a funkció még nem elérhető");
-                    Console.WriteLine("Press Enter to get back to the MENU");
+                    Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
                 case "8":
                     Console.WriteLine("Ez a funkció még nem elérhető");
-                    Console.WriteLine("Press Enter to get back to the MENU");
+                    Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
                 case "9":
                     Console.WriteLine("Ez a funkció még nem elérhető");
-                    Console.WriteLine("Press Enter to get back to the MENU");
+                    Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
                 case "10":
                     Console.WriteLine("Ez a funkció még nem elérhető");
-                    Console.WriteLine("Press Enter to get back to the MENU");
+                    Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
                 case "11":
                     Console.WriteLine("Ez a funkció még nem elérhető");
-                    Console.WriteLine("Press Enter to get back to the MENU");
+                    Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
                 case "12":

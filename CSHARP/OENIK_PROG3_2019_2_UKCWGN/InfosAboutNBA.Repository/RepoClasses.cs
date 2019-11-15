@@ -29,7 +29,7 @@ namespace InfosAboutNBA.Repository
     }
 
     /// <summary>
-    /// Interface of Teams wich represents basic interface, IRepository.
+    /// Interface for Teams.
     /// </summary>
     public interface ITeamRepository : IRepository<Teams>
     {
