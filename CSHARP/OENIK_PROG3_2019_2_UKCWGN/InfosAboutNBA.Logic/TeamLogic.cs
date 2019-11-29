@@ -1,11 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using InfosAboutNBA.Data;
-using InfosAboutNBA.Repository;
+﻿// <copyright file="TeamLogic.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+// <summary>
+// TeamLogic
+// </summary>
 
 namespace InfosAboutNBA.Logic
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using InfosAboutNBA.Data;
+    using InfosAboutNBA.Repository;
+
     /// <summary>
     /// Logic class for Teams wich represents ITeamLogic interface.
     /// </summary>
@@ -26,7 +33,7 @@ namespace InfosAboutNBA.Logic
         /// Initializes a new instance of the <see cref="TeamLogic"/> class.
         /// The Constructor needs a ITeamRepository object.
         /// </summary>
-        /// <param name="repo"> ITeamRepository object</param>
+        /// <param name="repo"> ITeamRepository object.</param>
         public TeamLogic(ITeamRepository repo)
         {
             this.teamRepo = repo;
@@ -158,13 +165,16 @@ namespace InfosAboutNBA.Logic
         }
 
         /// <summary>
-        /// Ranks Teams by all time win percentage.
+        /// Rank of teams by all time win percentage.
         /// </summary>
-        public void RankingAllTime()
+        /// <returns> Ordered list. </returns>
+        public List<Teams> RankingAllTime()
         {
             var ranking = from x in this.teamRepo.GetAll()
                           orderby x.WinPercentageSinceFounded descending
                           select x;
+
+            return ranking.ToList();
         }
     }
 }

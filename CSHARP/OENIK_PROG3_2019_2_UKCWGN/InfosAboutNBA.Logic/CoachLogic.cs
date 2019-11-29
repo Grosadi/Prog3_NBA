@@ -1,11 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using InfosAboutNBA.Data;
-using InfosAboutNBA.Repository;
+﻿// <copyright file="CoachLogic.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+// <summary>
+// CoachLogic
+// </summary>
 
 namespace InfosAboutNBA.Logic
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using InfosAboutNBA.Data;
+    using InfosAboutNBA.Repository;
+
     /// <summary>
     /// Logic class for Coaches wich represents ICoachLogic.
     /// </summary>
@@ -139,7 +146,7 @@ namespace InfosAboutNBA.Logic
         /// <summary>
         /// Modify the number of championships of the selected Coach.
         /// </summary>
-        /// <param name="id"> id of the selected Coach</param>
+        /// <param name="id"> id of the selected Coach.</param>
         /// <param name="newNumber"> New number of championships.</param>
         public void ModifyCoachNumberOfChampionships(int id, int newNumber)
         {
@@ -167,6 +174,7 @@ namespace InfosAboutNBA.Logic
             var coach = from x in this.coachRepo.GetAll()
                         where x.idTeams == idTeam
                         select x;
+
             return coach as Coaches;
         }
     }

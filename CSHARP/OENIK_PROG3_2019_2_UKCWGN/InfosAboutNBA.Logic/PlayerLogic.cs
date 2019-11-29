@@ -1,11 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using InfosAboutNBA.Data;
-using InfosAboutNBA.Repository;
+﻿// <copyright file="PlayerLogic.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+// <summary>
+// PlayerLogic
+// </summary>
 
 namespace InfosAboutNBA.Logic
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using InfosAboutNBA.Data;
+    using InfosAboutNBA.Repository;
+
     /// <summary>
     /// Logic class for Players wich represents IPlayerLogic interface.
     /// </summary>
@@ -73,7 +80,7 @@ namespace InfosAboutNBA.Logic
         }
 
         /// <summary>
-        /// Returns a List with the all Player item from table Players
+        /// Returns a List with the all Player item from table Players.
         /// </summary>
         /// <returns> List of Players.</returns>
         public List<Players> GetAll()
@@ -162,7 +169,7 @@ namespace InfosAboutNBA.Logic
         /// <summary>
         /// Modify the height of the selected Player.
         /// </summary>
-        /// <param name="id"> id of the selected Player</param>
+        /// <param name="id"> id of the selected Player.</param>
         /// <param name="newHeigh"> New height value.</param>
         public void ModifyPlayerHeight(int id, int newHeigh)
         {
@@ -183,7 +190,7 @@ namespace InfosAboutNBA.Logic
         /// <summary>
         /// Modify the weight of the selected Player.
         /// </summary>
-        /// <param name="id"> id of the selected Player</param>
+        /// <param name="id"> id of the selected Player.</param>
         /// <param name="newWeight"> New weight value.</param>
         public void ModifyPlayerWeight(int id, int newWeight)
         {

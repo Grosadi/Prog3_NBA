@@ -1,14 +1,26 @@
-﻿using System;
+﻿// <copyright file="PlayerNotFoundException.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+// <summary>
+// PlayerNotFoundException
+// </summary>
 
 namespace InfosAboutNBA.Logic
 {
+    using System;
+
+    /// <summary>
+    /// Exception for Players.
+    /// </summary>
     public class PlayerNotFoundException : ApplicationException
     {
-        public string Msg { get; set; }
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PlayerNotFoundException"/> class.
+        /// </summary>
+        /// <param name="msg"> Message. </param>
         public PlayerNotFoundException(string msg)
+            : base(msg)
         {
-            this.Msg = msg;
         }
     }
 }
