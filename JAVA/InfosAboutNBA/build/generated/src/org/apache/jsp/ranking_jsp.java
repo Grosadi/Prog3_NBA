@@ -3,7 +3,8 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import controller.*;
+import controller.TeamController;
+import controller.Team;
 
 public final class ranking_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -46,6 +47,7 @@ public final class ranking_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -54,14 +56,16 @@ public final class ranking_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <h1>Season Ranking <br/></h1>\n");
-      out.write("        <form>\n");
-      out.write("            ");
-
-                TeamController tc = new TeamController();
-                
-                
-      out.write("\n");
-      out.write("        </form>\n");
+      out.write("             <c:forEach items=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${list}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" var=\"Team\">\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${Team.Name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</td>\n");
+      out.write("                    </tr>\n");
+      out.write("               </c:forEach>\n");
+      out.write(" \n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

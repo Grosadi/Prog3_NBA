@@ -4,8 +4,12 @@
     Author     : hp EliteBook
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="controller.*" %>
+<%@page import="controller.TeamController" %>
+<%@page import="controller.Team" %>
+<%@page import="java.util.ArrayList" %>
+        
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,18 +18,17 @@
     </head>
     <body>
         <h1>Season Ranking <br/></h1>
-                <form action="CsomagAjanlo" method="get">
-            
-            
-                <%
-                    for (TeamCollector csj : CsatornaJelleg.values()) {
-                %>
-                <option><%= csj.toString()%></option>
-                <%
-                    }
-                %>
-            </select><br/>
-                %>
+        <table>
+            <tr>
+                <th>Name:</th>
+            </tr>
+            <c:forEach items="${list}" var="team">
+            <tr>
+                <td>${team.Name}</td>
+            </tr>
+            </c:forEach>
+        </table>
+             
  
     </body>
 </html>
