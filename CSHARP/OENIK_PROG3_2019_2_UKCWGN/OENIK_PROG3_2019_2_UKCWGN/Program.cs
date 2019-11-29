@@ -9,6 +9,7 @@ namespace OENIK_PROG3_2019_2_UKCWGN
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -244,7 +245,11 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                     Console.ReadLine();
                     return true;
                 case "10":
-                    Console.WriteLine("Ez a funkció még nem elérhető");
+                    string url = "http://localhost:8080/InfosAboutNBA/";
+                    Process p = new Process();
+                    p.StartInfo = new ProcessStartInfo();
+                    p.StartInfo.FileName = url;
+                    p.Start();
                     Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;
