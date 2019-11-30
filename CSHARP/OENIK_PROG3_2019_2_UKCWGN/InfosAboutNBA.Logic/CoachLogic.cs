@@ -175,7 +175,7 @@ namespace InfosAboutNBA.Logic
                         where x.idTeams == idTeam
                         select x;
 
-            return coach as Coaches;
+            return coach.FirstOrDefault();
         }
     }
 }
