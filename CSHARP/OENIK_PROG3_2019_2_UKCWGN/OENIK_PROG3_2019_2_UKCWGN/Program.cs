@@ -62,7 +62,7 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                         case "1":
                             foreach (var item in team.GetAll())
                             {
-                                Console.WriteLine(item.idTeams + "\t" + item.HomeTown + item.TName);
+                                Console.WriteLine(item.idTeams + "\t" + item.HomeTown + " " + item.TName);
                             }
 
                             Console.WriteLine("\nPress Enter to get back to the MENU");
