@@ -64,13 +64,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InfosAboutNBA.Data\InfosAboutNBA.Data.csproj">
+    <ProjectReference Include="..\InfosAboutNBA.Data\InfosAboutNba.Data.csproj">
       <Project>{4a41bb78-cbfb-414c-8f0f-544a5d88f582}</Project>
-      <Name>InfosAboutNBA.Data</Name>
+      <Name>InfosAboutNba.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\InfosAboutNBA.Logic\InfosAboutNBA.Logic.csproj">
+    <ProjectReference Include="..\InfosAboutNBA.Logic\InfosAboutNba.Logic.csproj">
       <Project>{2fb9d4f6-8cca-47f7-b5e9-d409e446a80b}</Project>
-      <Name>InfosAboutNBA.Logic</Name>
+      <Name>InfosAboutNba.Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

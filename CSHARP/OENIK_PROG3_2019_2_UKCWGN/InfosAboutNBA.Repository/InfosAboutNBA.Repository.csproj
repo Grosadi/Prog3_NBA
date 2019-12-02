@@ -68,9 +68,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InfosAboutNBA.Data\InfosAboutNBA.Data.csproj">
+    <ProjectReference Include="..\InfosAboutNBA.Data\InfosAboutNba.Data.csproj">
       <Project>{4a41bb78-cbfb-414c-8f0f-544a5d88f582}</Project>
-      <Name>InfosAboutNBA.Data</Name>
+      <Name>InfosAboutNba.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

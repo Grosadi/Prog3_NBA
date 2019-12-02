@@ -3,20 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNBA.Program", "OENIK_PROG3_2019_2_UKCWGN\InfosAboutNBA.Program.csproj", "{861C48D1-EFCC-4342-B73D-4939BD12035D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNba.Program", "OENIK_PROG3_2019_2_UKCWGN\InfosAboutNba.Program.csproj", "{861C48D1-EFCC-4342-B73D-4939BD12035D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{446EC35A-3710-4098-AAED-F6C44BE6A3FF}"
 	ProjectSection(SolutionItems) = preProject
 		oenik.ruleset = oenik.ruleset
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNBA.Repository", "InfosAboutNBA.Repository\InfosAboutNBA.Repository.csproj", "{556BF0D6-07CD-4BAE-854B-3B239CB3403C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNba.Repository", "InfosAboutNBA.Repository\InfosAboutNba.Repository.csproj", "{556BF0D6-07CD-4BAE-854B-3B239CB3403C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNBA.Logic", "InfosAboutNBA.Logic\InfosAboutNBA.Logic.csproj", "{2FB9D4F6-8CCA-47F7-B5E9-D409E446A80B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNba.Logic", "InfosAboutNBA.Logic\InfosAboutNba.Logic.csproj", "{2FB9D4F6-8CCA-47F7-B5E9-D409E446A80B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNBA.Logic.Test", "InfosAboutNBA.Logic.Test\InfosAboutNBA.Logic.Test.csproj", "{A0FC7E09-361A-497E-8A03-931AC1610AB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNba.Logic.Test", "InfosAboutNBA.Logic.Test\InfosAboutNba.Logic.Test.csproj", "{A0FC7E09-361A-497E-8A03-931AC1610AB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNBA.Data", "InfosAboutNBA.Data\InfosAboutNBA.Data.csproj", "{4A41BB78-CBFB-414C-8F0F-544A5D88F582}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfosAboutNba.Data", "InfosAboutNBA.Data\InfosAboutNba.Data.csproj", "{4A41BB78-CBFB-414C-8F0F-544A5D88F582}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

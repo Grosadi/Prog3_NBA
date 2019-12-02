@@ -1,18 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
-using Moq;
-using InfosAboutNBA.Logic;
-using InfosAboutNBA.Repository;
-using InfosAboutNBA.Data;
+﻿// <copyright file="LogicTesting.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+// <summary>
+// Logic Testing Class
+// </summary>
 
 namespace InfosAboutNBA.Logic.Test
 {
-     [TestFixture]
-     internal class LogicTesting
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using InfosAboutNBA.Data;
+    using InfosAboutNBA.Logic;
+    using InfosAboutNBA.Repository;
+    using Moq;
+    using NUnit.Framework;
+
+    /// <summary>
+    /// LogicTesting Class.
+    /// </summary>
+    [TestFixture]
+    internal class LogicTesting
     {
         [TestFixture]
         private class PlayerLogicTesting

@@ -69,13 +69,13 @@
     <None Include="stylecop.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InfosAboutNBA.Data\InfosAboutNBA.Data.csproj">
+    <ProjectReference Include="..\InfosAboutNBA.Data\InfosAboutNba.Data.csproj">
       <Project>{4a41bb78-cbfb-414c-8f0f-544a5d88f582}</Project>
-      <Name>InfosAboutNBA.Data</Name>
+      <Name>InfosAboutNba.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\InfosAboutNBA.Repository\InfosAboutNBA.Repository.csproj">
+    <ProjectReference Include="..\InfosAboutNBA.Repository\InfosAboutNba.Repository.csproj">
       <Project>{556bf0d6-07cd-4bae-854b-3b239cb3403c}</Project>
-      <Name>InfosAboutNBA.Repository</Name>
+      <Name>InfosAboutNba.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

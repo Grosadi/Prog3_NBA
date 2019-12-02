@@ -45,7 +45,7 @@ namespace OENIK_PROG3_2019_2_UKCWGN
             Console.WriteLine("6) Has this Team ever been a champion?");
             Console.WriteLine("7) Has this Player ever been a champion?");
             Console.WriteLine("8) Has this Coach ever been a champion?");
-            Console.WriteLine("9) List of Teams and order by Value of Roster");
+            Console.WriteLine("9) Total value of a Team");
             Console.WriteLine("10) Get season standing from Web Application");
             Console.WriteLine("11) Exit");
             Console.Write("\r\nSelect an option: ");
@@ -246,8 +246,10 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                     return true;
                 case "10":
                     string url = "http://localhost:8080/InfosAboutNBA/";
-                    Process p = new Process();
-                    p.StartInfo = new ProcessStartInfo();
+                    Process p = new Process
+                    {
+                        StartInfo = new ProcessStartInfo(),
+                    };
                     p.StartInfo.FileName = url;
                     p.Start();
                     Console.WriteLine("\nPress Enter to get back to the MENU");

@@ -68,17 +68,17 @@ namespace InfosAboutNBA.Logic
         /// <summary>
         /// Add new Coach item to the table Coaches.
         /// </summary>
-        /// <param name="coach"> New Coach object.</param>
-        public void Add(Coaches coach)
+        /// <param name="item"> New Coach object.</param>
+        public void Add(Coaches item)
         {
-            if (coach.idCoaches == this.coachRepo.GetOne(coach.idCoaches).idCoaches)
+            if (item.idCoaches == this.coachRepo.GetOne(item.idCoaches).idCoaches)
             {
-                coach.idCoaches = this.coachRepo.GetAll().Count() + 1;
-                throw new Exception("This index is already used!\t New index: " + coach.idCoaches);
+                item.idCoaches = this.coachRepo.GetAll().Count() + 1;
+                throw new Exception("This index is already used!\t New index: " + item.idCoaches);
             }
             else
             {
-                this.coachRepo.AddCoach(coach);
+                this.coachRepo.AddCoach(item);
             }
         }
 
