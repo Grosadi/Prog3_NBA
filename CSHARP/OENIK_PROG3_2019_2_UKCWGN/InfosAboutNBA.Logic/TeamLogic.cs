@@ -5,13 +5,13 @@
 // TeamLogic
 // </summary>
 
-namespace InfosAboutNBA.Logic
+namespace InfosAboutNba.Logic
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using InfosAboutNBA.Data;
-    using InfosAboutNBA.Repository;
+    using InfosAboutNba.Data;
+    using InfosAboutNba.Repository;
 
     /// <summary>
     /// Logic class for Teams wich represents ITeamLogic interface.
@@ -68,17 +68,17 @@ namespace InfosAboutNBA.Logic
         /// <summary>
         /// Add one Team object to the tables Teams.
         /// </summary>
-        /// <param name="team"> A Team object.</param>
-        public void Add(Teams team)
+        /// <param name="item"> A Team object.</param>
+        public void Add(Teams item)
         {
-            if (team.idTeams == this.teamRepo.GetOne(team.idTeams).idTeams)
+            if (item.idTeams == this.teamRepo.GetOne(item.idTeams).idTeams)
             {
-                team.idTeams = this.teamRepo.GetAll().Count() + 1;
-                throw new Exception("This index is already used!\t New index: " + team.idTeams);
+                item.idTeams = this.teamRepo.GetAll().Count() + 1;
+                throw new Exception("This index is already used!\t New index: " + item.idTeams);
             }
             else
             {
-                this.teamRepo.AddTeam(team);
+                this.teamRepo.AddTeam(item);
             }
         }
 
@@ -90,7 +90,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.teamRepo.GetOne(id) == null)
             {
-                throw new TeamNotFoundException("This team is already deleted or doesn't exist!");
+                throw new Exception("This team is already deleted or doesn't exist!");
             }
             else
             {
@@ -107,7 +107,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.teamRepo.GetOne(id) == null)
             {
-                throw new TeamNotFoundException("Team not found!");
+                throw new Exception("Team not found!");
             }
             else if (newPercentage > 1 || newPercentage < 0)
             {
@@ -128,7 +128,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.teamRepo.GetOne(id) == null)
             {
-                throw new TeamNotFoundException("Team not found!");
+                throw new Exception("Team not found!");
             }
             else if (newNumber < 0)
             {
@@ -149,7 +149,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.teamRepo.GetOne(id) == null)
             {
-                throw new TeamNotFoundException("Team not found!");
+                throw new Exception("Team not found!");
             }
             else
             {

@@ -5,16 +5,16 @@
 // Logic Testing Class
 // </summary>
 
-namespace InfosAboutNBA.Logic.Test
+namespace InfosAboutNba.Logic.Test
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using InfosAboutNBA.Data;
-    using InfosAboutNBA.Logic;
-    using InfosAboutNBA.Repository;
+    using InfosAboutNba.Data;
+    using InfosAboutNba.Logic;
+    using InfosAboutNba.Repository;
     using Moq;
     using NUnit.Framework;
 

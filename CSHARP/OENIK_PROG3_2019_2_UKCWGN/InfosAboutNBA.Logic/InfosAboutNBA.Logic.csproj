@@ -55,13 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoachLogic.cs" />
-    <Compile Include="CoachNotFoundException.cs" />
     <Compile Include="ILogic.cs" />
     <Compile Include="PlayerLogic.cs" />
-    <Compile Include="PlayerNotFoundException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeamLogic.cs" />
-    <Compile Include="TeamNotFoundException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -5,7 +5,7 @@
 // Repository interface
 // </summary>
 
-namespace InfosAboutNBA.Repository
+namespace InfosAboutNba.Repository
 {
     using System;
     using System.Collections.Generic;

@@ -5,13 +5,13 @@
 // PlayerLogic
 // </summary>
 
-namespace InfosAboutNBA.Logic
+namespace InfosAboutNba.Logic
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using InfosAboutNBA.Data;
-    using InfosAboutNBA.Repository;
+    using InfosAboutNba.Data;
+    using InfosAboutNba.Repository;
 
     /// <summary>
     /// Logic class for Players wich represents IPlayerLogic interface.
@@ -91,17 +91,17 @@ namespace InfosAboutNBA.Logic
         /// <summary>
         /// Add new Player object to the table Players.
         /// </summary>
-        /// <param name="player"> Player object.</param>
-        public void Add(Players player)
+        /// <param name="item"> Player object.</param>
+        public void Add(Players item)
         {
-            if (player.idPlayers == this.playerRepo.GetOne(player.idPlayers).idPlayers)
+            if (item.idPlayers == this.playerRepo.GetOne(item.idPlayers).idPlayers)
             {
-                player.idPlayers = this.playerRepo.GetAll().Count() + 1;
-                throw new Exception("This index is already used!\t New index: " + player.idPlayers);
+                item.idPlayers = this.playerRepo.GetAll().Count() + 1;
+                throw new Exception("This index is already used!\t New index: " + item.idPlayers);
             }
             else
             {
-                this.playerRepo.AddPlayer(player);
+                this.playerRepo.AddPlayer(item);
             }
         }
 
@@ -113,7 +113,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.playerRepo.GetOne(id) == null)
             {
-                throw new PlayerNotFoundException("This player is already deleted or doesn't exist!");
+                throw new Exception("This player is already deleted or doesn't exist!");
             }
             else
             {
@@ -130,7 +130,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.playerRepo.GetOne(id) == null)
             {
-                throw new PlayerNotFoundException("Player not found!");
+                throw new Exception("Player not found!");
             }
             else
             {
@@ -154,7 +154,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.playerRepo.GetOne(id) == null)
             {
-                throw new PlayerNotFoundException("Player not found!");
+                throw new Exception("Player not found!");
             }
             else if (newAge <= 0 || newAge > 99)
             {
@@ -175,7 +175,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.playerRepo.GetOne(id) == null)
             {
-                throw new PlayerNotFoundException("Player not found!");
+                throw new Exception("Player not found!");
             }
             else if (newHeigh < 150 || newHeigh > 250)
             {
@@ -196,7 +196,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.playerRepo.GetOne(id) == null)
             {
-                throw new PlayerNotFoundException("Player not found!");
+                throw new Exception("Player not found!");
             }
             else if (newWeight < 60 || newWeight > 180)
             {
@@ -217,7 +217,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.playerRepo.GetOne(id) == null)
             {
-                throw new PlayerNotFoundException("Player not found!");
+                throw new Exception("Player not found!");
             }
             else if (newPoints < 0 || newPoints > 4000)
             {
@@ -238,7 +238,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.playerRepo.GetOne(id) == null)
             {
-                throw new PlayerNotFoundException("Player not found!");
+                throw new Exception("Player not found!");
             }
             else if (newNumber < 0)
             {

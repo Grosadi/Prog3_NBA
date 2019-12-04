@@ -13,14 +13,14 @@ namespace OENIK_PROG3_2019_2_UKCWGN
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using InfosAboutNBA.Logic;
+    using InfosAboutNba.Logic;
 
     /// <summary>
     /// Main Program.
     /// </summary>
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             bool showMenu = true;
             while (showMenu)
@@ -73,7 +73,7 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                             string name = Console.ReadLine();
                             Console.WriteLine("Hometown:");
                             string city = Console.ReadLine();
-                            team.Add(new InfosAboutNBA.Data.Teams() { TName = name, HomeTown = city });
+                            team.Add(new InfosAboutNba.Data.Teams() { TName = name, HomeTown = city });
                             Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
@@ -115,7 +115,7 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                         case "2":
                             Console.WriteLine("Player name");
                             string name = Console.ReadLine();
-                            player.Add(new InfosAboutNBA.Data.Players() { PName = name });
+                            player.Add(new InfosAboutNba.Data.Players() { PName = name });
                             Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
@@ -169,7 +169,7 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                         case "2":
                             Console.WriteLine("Name of Coach:");
                             string name = Console.ReadLine();
-                            coach.Add(new InfosAboutNBA.Data.Coaches() { CName = name });
+                            coach.Add(new InfosAboutNba.Data.Coaches() { CName = name });
                             Console.WriteLine("\nPress Enter to get back to the MENU");
                             Console.ReadLine();
                             return true;
@@ -245,13 +245,6 @@ namespace OENIK_PROG3_2019_2_UKCWGN
                     Console.ReadLine();
                     return true;
                 case "10":
-                    string url = "http://localhost:8080/InfosAboutNBA/";
-                    Process p = new Process
-                    {
-                        StartInfo = new ProcessStartInfo(),
-                    };
-                    p.StartInfo.FileName = url;
-                    p.Start();
                     Console.WriteLine("\nPress Enter to get back to the MENU");
                     Console.ReadLine();
                     return true;

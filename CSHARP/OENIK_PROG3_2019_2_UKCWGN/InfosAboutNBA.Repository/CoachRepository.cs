@@ -5,10 +5,10 @@
 // CoachRepository
 // </summary>
 
-namespace InfosAboutNBA.Repository
+namespace InfosAboutNba.Repository
 {
     using System.Linq;
-    using InfosAboutNBA.Data;
+    using InfosAboutNba.Data;
 
     /// <summary>
     /// Class for Coaches wich represents ICoachRepository.

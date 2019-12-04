@@ -5,9 +5,9 @@
 // IPlayerRepository
 // </summary>
 
-namespace InfosAboutNBA.Repository
+namespace InfosAboutNba.Repository
 {
-    using InfosAboutNBA.Data;
+    using InfosAboutNba.Data;
 
     /// <summary>
     /// Inteface of Players wich represents basic interface, IRepository.

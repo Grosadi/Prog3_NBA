@@ -5,13 +5,13 @@
 // CoachLogic
 // </summary>
 
-namespace InfosAboutNBA.Logic
+namespace InfosAboutNba.Logic
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using InfosAboutNBA.Data;
-    using InfosAboutNBA.Repository;
+    using InfosAboutNba.Data;
+    using InfosAboutNba.Repository;
 
     /// <summary>
     /// Logic class for Coaches wich represents ICoachLogic.
@@ -48,7 +48,7 @@ namespace InfosAboutNBA.Logic
         {
             if (id <= 0 || id > this.coachRepo.GetAll().Count())
             {
-                throw new CoachNotFoundException("Coach not found!");
+                throw new Exception("Coach not found!");
             }
             else
             {
@@ -90,7 +90,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.coachRepo.GetOne(id) == null)
             {
-                throw new CoachNotFoundException("This Coach is already deleted or doesn't exist!");
+                throw new Exception("This Coach is already deleted or doesn't exist!");
             }
             else
             {
@@ -107,7 +107,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.coachRepo.GetOne(id) == null)
             {
-                throw new CoachNotFoundException("This Coach is already deleted or doesn't exist!");
+                throw new Exception("This Coach is already deleted or doesn't exist!");
             }
             else
             {
@@ -131,7 +131,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.coachRepo.GetOne(id) == null)
             {
-                throw new CoachNotFoundException("This Coach is already deleted or doesn't exist!");
+                throw new Exception("This Coach is already deleted or doesn't exist!");
             }
             else if (newPercentage > 1 || newPercentage < 0)
             {
@@ -152,7 +152,7 @@ namespace InfosAboutNBA.Logic
         {
             if (this.coachRepo.GetOne(id) == null)
             {
-                throw new CoachNotFoundException("This Coach is already deleted or doesn't exist!");
+                throw new Exception("This Coach is already deleted or doesn't exist!");
             }
             else if (newNumber < 0)
             {

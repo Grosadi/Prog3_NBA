@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace InfosAboutNBA.Data
+namespace InfosAboutNba.Data
 {
     using System;
     using System.Data.Entity;

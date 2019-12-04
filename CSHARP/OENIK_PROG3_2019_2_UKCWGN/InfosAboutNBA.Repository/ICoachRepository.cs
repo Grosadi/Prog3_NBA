@@ -5,9 +5,9 @@
 // ICoachRepository
 // </summary>
 
-namespace InfosAboutNBA.Repository
+namespace InfosAboutNba.Repository
 {
-    using InfosAboutNBA.Data;
+    using InfosAboutNba.Data;
 
     /// <summary>
     /// Interface of Coaches wich represents basic interface, IRepository.

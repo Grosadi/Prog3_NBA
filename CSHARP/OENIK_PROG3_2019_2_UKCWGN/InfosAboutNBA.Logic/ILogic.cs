@@ -4,10 +4,10 @@
 // <summary>
 // Interfaces for the Logic classes.
 // </summary>
-namespace InfosAboutNBA.Logic
+namespace InfosAboutNba.Logic
 {
     using System.Collections.Generic;
-    using InfosAboutNBA.Data;
+    using InfosAboutNba.Data;
 
     /// <summary>
     /// Basic interface of the Logic classes.

@@ -5,14 +5,14 @@
 // PlayerRepository
 // </summary>
 
-namespace InfosAboutNBA.Repository
+namespace InfosAboutNba.Repository
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using InfosAboutNBA.Data;
+    using InfosAboutNba.Data;
 
     /// <summary>
     /// Class for Players wich represents IPlayerRepository.
