@@ -374,3 +374,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/JAVA/InfosAboutNba_Java/nbproject/private/
+/JAVA/InfosAboutNba/nbproject/private/
+/JAVA/InfosAboutNba/build/

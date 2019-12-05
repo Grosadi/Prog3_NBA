@@ -5,11 +5,9 @@
  */
 package servlet;
 
-import controller.Team;
-import controller.TeamController;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
+import java.util.Random;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,9 +18,9 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author hp EliteBook
  */
-@WebServlet(name = "Servlet", urlPatterns = {"/Servlet"})
-public class Servlet extends HttpServlet {
-
+@WebServlet(name = "Percentage", urlPatterns = {"/Percentage"})
+public class Percentage extends HttpServlet {
+        static Random r = new Random();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -34,8 +32,20 @@ public class Servlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        
+        response.setContentType("text/xml;charset=UTF-8");
+        try ( PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+           String tName = request.getParameter("tName");
+           if(tName == null){
+               tName = "Test Team";
+           }
+           
+           
+            out.println("<percentage>");
+            out.println("<tName>"+tName+"</tName>");
+            out.println("<value>"+(r.nextInt(99))+"%"+"<value>");
+            out.println("</percentage>");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -50,13 +60,7 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        TeamController tc = new TeamController();
-        
-        List<Team> list = tc.getTeams();
-        
-        request.setAttribute("list", list);
-        
-        
+        processRequest(request, response);
     }
 
     /**
