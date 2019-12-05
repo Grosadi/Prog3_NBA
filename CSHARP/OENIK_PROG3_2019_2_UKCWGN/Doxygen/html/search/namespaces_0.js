@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['data_64',['Data',['../namespace_infos_about_n_b_a_1_1_data.html',1,'InfosAboutNBA']]],
-  ['infosaboutnba_65',['InfosAboutNBA',['../namespace_infos_about_n_b_a.html',1,'']]],
-  ['logic_66',['Logic',['../namespace_infos_about_n_b_a_1_1_logic.html',1,'InfosAboutNBA']]],
-  ['repository_67',['Repository',['../namespace_infos_about_n_b_a_1_1_repository.html',1,'InfosAboutNBA']]]
+  ['data_80',['Data',['../namespace_infos_about_nba_1_1_data.html',1,'InfosAboutNba']]],
+  ['infosaboutnba_81',['InfosAboutNba',['../namespace_infos_about_nba.html',1,'']]],
+  ['logic_82',['Logic',['../namespace_infos_about_nba_1_1_logic.html',1,'InfosAboutNba']]],
+  ['repository_83',['Repository',['../namespace_infos_about_nba_1_1_repository.html',1,'InfosAboutNba']]],
+  ['test_84',['Test',['../namespace_infos_about_nba_1_1_logic_1_1_test.html',1,'InfosAboutNba::Logic']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['teamlogic_34',['TeamLogic',['../class_infos_about_n_b_a_1_1_logic_1_1_team_logic.html',1,'InfosAboutNBA::Logic']]],
-  ['teamrepository_35',['TeamRepository',['../class_infos_about_n_b_a_1_1_repository_1_1_team_repository.html',1,'InfosAboutNBA::Repository']]],
-  ['teams_36',['Teams',['../class_infos_about_n_b_a_1_1_data_1_1_teams.html',1,'InfosAboutNBA::Data']]]
+  ['oenik_5fprog3_5f2019_5f2_5fukcwgn_46',['OENIK_PROG3_2019_2_UKCWGN',['../namespace_o_e_n_i_k___p_r_o_g3__2019__2___u_k_c_w_g_n.html',1,'']]]
 ];

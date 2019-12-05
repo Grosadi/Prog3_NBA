@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['coaches_0',['Coaches',['../class_infos_about_n_b_a_1_1_data_1_1_coaches.html',1,'InfosAboutNBA::Data']]],
-  ['coachlogic_1',['CoachLogic',['../class_infos_about_n_b_a_1_1_logic_1_1_coach_logic.html',1,'InfosAboutNBA::Logic']]],
-  ['coachrepository_2',['CoachRepository',['../class_infos_about_n_b_a_1_1_repository_1_1_coach_repository.html',1,'InfosAboutNBA::Repository']]],
-  ['castle_20core_20changelog_3',['Castle Core Changelog',['../md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_06bab7ce95df2127316a696d74069254.html',1,'']]]
+  ['add_0',['Add',['../class_infos_about_nba_1_1_logic_1_1_coach_logic.html#ae32a4ecdf47b74e57e2dc724d6e83030',1,'InfosAboutNba.Logic.CoachLogic.Add()'],['../interface_infos_about_nba_1_1_logic_1_1_i_logic.html#a897289bc8f09eca634cf100138386735',1,'InfosAboutNba.Logic.ILogic.Add()'],['../class_infos_about_nba_1_1_logic_1_1_player_logic.html#aae7161e108318284cf9b6192366ea694',1,'InfosAboutNba.Logic.PlayerLogic.Add()'],['../class_infos_about_nba_1_1_logic_1_1_team_logic.html#afed5efd4ec65830d538dc0d62fa36afb',1,'InfosAboutNba.Logic.TeamLogic.Add()']]],
+  ['addcoach_1',['AddCoach',['../class_infos_about_nba_1_1_repository_1_1_coach_repository.html#aeffa8104b1d568319c74833cb4c9c9b7',1,'InfosAboutNba.Repository.CoachRepository.AddCoach()'],['../interface_infos_about_nba_1_1_repository_1_1_i_coach_repository.html#ab03e6d9759e8444ed950b57eeb6a36e4',1,'InfosAboutNba.Repository.ICoachRepository.AddCoach()']]],
+  ['addplayer_2',['AddPlayer',['../interface_infos_about_nba_1_1_repository_1_1_i_player_repository.html#acae108473598947675c23ca1c21886f0',1,'InfosAboutNba.Repository.IPlayerRepository.AddPlayer()'],['../class_infos_about_nba_1_1_repository_1_1_player_repository.html#a05275e7487c15f7ad0112193fed05768',1,'InfosAboutNba.Repository.PlayerRepository.AddPlayer()']]],
+  ['addteam_3',['AddTeam',['../interface_infos_about_nba_1_1_repository_1_1_i_team_repository.html#a219b6410399fd200e2e44152623b519b',1,'InfosAboutNba.Repository.ITeamRepository.AddTeam()'],['../class_infos_about_nba_1_1_repository_1_1_team_repository.html#a1fd8bd5a61a45cd9f101dee81139e6e6',1,'InfosAboutNba.Repository.TeamRepository.AddTeam()']]]
 ];

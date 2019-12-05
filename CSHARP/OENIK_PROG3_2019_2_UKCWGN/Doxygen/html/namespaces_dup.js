@@ -168,6 +168,6 @@ var namespaces_dup =
       [ "General", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_301cf307f892a1f05fd72f2d4dbc35a5.html#autotoc_md162", null ],
       [ "Bug Fixes", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_301cf307f892a1f05fd72f2d4dbc35a5.html#autotoc_md163", null ]
     ] ],
-    [ "InfosAboutNBA", "namespace_infos_about_n_b_a.html", "namespace_infos_about_n_b_a" ],
+    [ "InfosAboutNba", "namespace_infos_about_nba.html", "namespace_infos_about_nba" ],
     [ "OENIK_PROG3_2019_2_UKCWGN", "namespace_o_e_n_i_k___p_r_o_g3__2019__2___u_k_c_w_g_n.html", null ]
 ];

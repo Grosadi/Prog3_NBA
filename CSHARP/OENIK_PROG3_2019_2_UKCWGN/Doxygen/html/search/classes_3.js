@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['nba_5fdataentities_55',['NBA_DataEntities',['../class_infos_about_n_b_a_1_1_data_1_1_n_b_a___data_entities.html',1,'InfosAboutNBA::Data']]]
+  ['playerlogic_74',['PlayerLogic',['../class_infos_about_nba_1_1_logic_1_1_player_logic.html',1,'InfosAboutNba::Logic']]],
+  ['playerrepository_75',['PlayerRepository',['../class_infos_about_nba_1_1_repository_1_1_player_repository.html',1,'InfosAboutNba::Repository']]],
+  ['players_76',['Players',['../class_infos_about_nba_1_1_data_1_1_players.html',1,'InfosAboutNba::Data']]]
 ];

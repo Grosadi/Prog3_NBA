@@ -22,7 +22,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "DoxyGen", "index.html", [
     [ "Castle Core Changelog", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_06bab7ce95df2127316a696d74069254.html", [
       [ "4.4.0 (2019-04-05)", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_06bab7ce95df2127316a696d74069254.html#autotoc_md1", null ],
       [ "4.3.1 (2018-06-21)", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_06bab7ce95df2127316a696d74069254.html#autotoc_md2", null ],
@@ -57,16 +57,17 @@ var NAVTREE =
       [ "0.0.1.0", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_06bab7ce95df2127316a696d74069254.html#autotoc_md31", null ]
     ] ],
     [ "NUnit 3.12 - May 14, 2019", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_301cf307f892a1f05fd72f2d4dbc35a5.html", null ],
-    [ "README", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__r_e_a_d_m_e.html", null ],
-    [ "README", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__j_a_v_a__r_e_a_d_m_e.html", null ],
-    [ "OENIK_PROG3_2019_2_UKCWGN", "md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__r_e_a_d_m_e.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ]
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
@@ -76,8 +77,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_coaches_8cs_source.html",
-"md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_301cf307f892a1f05fd72f2d4dbc35a5.html#autotoc_md138"
+"_coach_logic_8cs_source.html",
+"md__c_1__users_hp__elite_book__documents_oenik_prog3_2019_2_ukcwgn__c_s_h_a_r_p__o_e_n_i_k__p_r_301cf307f892a1f05fd72f2d4dbc35a5.html#autotoc_md129"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
